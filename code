@@ -1,0 +1,27 @@
+using System;
+
+namespace LowestNumber
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Starting variables 
+      int numberOne = 12932;
+      int numberTwo = -2828472;
+
+      // Use built-in methods and save to variable 
+      double numberOneSqrt = Math.Floor(Math.Sqrt(numberOne)); //Gives the square root of Number One, and using Math.Floor, rounds it to the nearest whole number
+
+
+      // Use built-in methods and save to variable 
+      double numberTwoSqrt = Math.Floor(Math.Sqrt(Math.Abs(numberTwo))); //Gives the square root of Number Two, and, using Math.Floor, rounds number to nearest whole value, and also uses Math.Abs() to find the absolute value of the number
+
+
+      // Print the lowest number
+      Console.WriteLine(Math.Min(numberOneSqrt, numberTwoSqrt));
+
+
+    }
+  }
+}
